@@ -1,0 +1,4 @@
+HBase is a popular NoSQL database based on Google's BigTable. It's integral part of Hadoop family of projects. More about HBase can be found at http://hadoop.apache.org/hbase/
+
+At GumGum we created Spring Template for accessing HBase in java way back in 2009. I also filled an issue in Spring Framework's jira (https://jira.springsource.org/browse/SPR-5950) hoping that Spring will integrate our code in their libraries. But since that hasn't happened yet, I decided to open source the code here so that the community can benefit.
+
