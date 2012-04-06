@@ -2,3 +2,17 @@ HBase is a popular NoSQL database based on Google's BigTable. It's integral part
 
 At GumGum we created Spring Template for accessing HBase in java way back in 2009. I also filled an issue in Spring Framework's jira (https://jira.springsource.org/browse/SPR-5950) hoping that Spring will integrate our code in their libraries. But since that hasn't happened yet, I decided to open source the code here so that the community can benefit.
 
+The code here will work with HBase 0.92.x. If you want to make it work with earlier versions a small change might be required. 
+Contact me at vpuranik at gmail to get the code working on prior Hbase versions. Alternatively you can use the code posted in the jira issue mentioned above. That code 
+is tested on 0.90.x and 0.20.x versions.
+
+The code can be built with gradle. Gradle is like maven or ant + dependency management. You can install gradle from http://www.gradle.org/.
+Once gradle is install, simply run gradle clean assemble from the folder where build.gradle file is located. It will create a build folder 
+and under build/libs folder you will find the jar. Simply include this jar in your your application. You are also required to include HBase 0.92.x
+and Hadoop Core (any version after 0.20.2) jars since the code the source depends upon those jars.
+
+You may alternatively choose to include the source code in your project and build it with your source code. In that case just make sure that 
+HBase and Hadoop jars are in the compile classpath.
+
+
+
