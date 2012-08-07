@@ -7,12 +7,12 @@ Contact me at vpuranik at gmail to get the code working on prior Hbase versions.
 is tested on 0.90.x and 0.20.x versions.
 
 The code can be built with gradle. Gradle is like maven or ant + dependency management. You can install gradle from http://www.gradle.org/.
-Once gradle is install, simply run gradle clean assemble from the folder where build.gradle file is located. It will create a build folder 
+Once gradle is installed, simply run gradle clean assemble from the folder where build.gradle file is located. It will create a build folder 
 and under build/libs folder you will find the jar. Simply include this jar in your your application. You are also required to include HBase 0.92.x
 and Hadoop Core (any version after 0.20.2) jars since the code the source depends upon those jars.
 
 You may alternatively choose to include the source code in your project and build it with your source code. In that case just make sure that 
-HBase and Hadoop jars are in the compile classpath.
+HBase and Hadoop jars must be in the classpath.
 
 
 
